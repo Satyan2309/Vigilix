@@ -1,0 +1,22 @@
+.env
+.env*.local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+data/*.db
+data/*.sqlite*
+data/chroma/
+.DS_Store
+.streamlit/secrets.toml
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# External datasets
+data/external_datasets/

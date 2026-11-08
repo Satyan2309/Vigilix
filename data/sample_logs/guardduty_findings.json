@@ -1,0 +1,16 @@
+{
+  "Findings": [
+    {
+      "id": "demo-guardduty-finding-001",
+      "type": "UnauthorizedAccess:IAMUser/ConsoleLoginSuccess.B",
+      "title": "Unusual successful console sign-in for an IAM user",
+      "description": "Synthetic training finding: an IAM user successfully signed in from an IP address not seen in the expected baseline. Validate identity, MFA, and adjacent audit events.",
+      "severity": 8.0,
+      "createdAt": "2026-10-25T09:15:11Z",
+      "updatedAt": "2026-10-25T09:15:11Z",
+      "region": "ap-south-1",
+      "resource": {"resourceType": "AccessKey", "accessKeyDetails": {"userName": "analyst-demo", "principalId": "AIDAINVESTIGATE01", "userType": "IAMUser"}},
+      "service": {"action": {"actionType": "AWS_API_CALL", "awsApiCallAction": {"api": "ConsoleLogin", "serviceName": "signin.amazonaws.com", "remoteIpDetails": {"ipAddressV4": "203.0.113.50"}}}}
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-25T09:14:03Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64)",
+      "errorCode": "Failed authentication",
+      "eventID": "demo-login-fail-001",
+      "userIdentity": {"type": "IAMUser", "principalId": "AIDAINVESTIGATE01", "arn": "arn:aws:iam::123456789012:user/analyst-demo", "userName": "analyst-demo"},
+      "responseElements": {"ConsoleLogin": "Failure"}
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-25T09:15:11Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64)",
+      "eventID": "demo-login-success-002",
+      "userIdentity": {"type": "IAMUser", "principalId": "AIDAINVESTIGATE01", "arn": "arn:aws:iam::123456789012:user/analyst-demo", "userName": "analyst-demo"},
+      "responseElements": {"ConsoleLogin": "Success"}
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-25T09:17:42Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.17.0",
+      "eventID": "demo-create-key-003",
+      "userIdentity": {"type": "IAMUser", "principalId": "AIDAINVESTIGATE01", "arn": "arn:aws:iam::123456789012:user/analyst-demo", "userName": "analyst-demo"},
+      "requestParameters": {"userName": "analyst-demo"},
+      "responseElements": {"accessKey": {"status": "Active", "userName": "analyst-demo"}}
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-25T09:19:09Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.17.0",
+      "eventID": "demo-attach-policy-004",
+      "userIdentity": {"type": "IAMUser", "principalId": "AIDAINVESTIGATE01", "arn": "arn:aws:iam::123456789012:user/analyst-demo", "userName": "analyst-demo"},
+      "requestParameters": {"userName": "analyst-demo", "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"}
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-25T09:21:33Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.17.0",
+      "eventID": "demo-stop-logging-005",
+      "userIdentity": {"type": "IAMUser", "principalId": "AIDAINVESTIGATE01", "arn": "arn:aws:iam::123456789012:user/analyst-demo", "userName": "analyst-demo"},
+      "requestParameters": {"name": "organization-trail-demo"}
+    }
+  ]
+}
