@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: vigilix-api
+    runtime: docker
+    plan: free
+    region: ohio
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: LLM_PROVIDER
+        value: nvidia
+      - key: CORS_ORIGINS
+        sync: false
+      - key: CHROMA_PERSIST_DIR
+        value: /tmp/chroma
